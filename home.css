@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/* ############ HTML Element Styling ######## */
+
+html{
+    font-size: 62.5%
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1, h2, h2{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500rem;
+    font-size: 2.5rem;
+    font-family: 'Vesper Libre', serif;
+}
+
+
+/* ############# utility Clases ########### */
+
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+   
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.normal-haeding{
+    font-size: 1.6rem;
+}
+
+
+.text-red{
+    color: rgb(172, 80, 80);
+}
+
+
+.text-white{
+    color:rgb(233, 220, 220);
+}
+
+
+.text-black{
+    color: rgba(20, 20, 20, 0.815);
+}
+
+
+.text-gray{
+    color: grey;
+}
+
+
+
+.btn{
+    display: inline-block;
+    padding:  0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0em;
+}
+
+.btn-primary{
+    background-color: white;
+    border-radius: 10em;
+}
+
+.btn-sec{
+    border: 2px solid red;
+    border-radius: 10em;
+}
+
+.bg-dark{
+    color: black;
+}
+
+
+
+/* ##################### Header Styling ############# */
+.header{
+    height: 95vh;
+   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url('./business-communication-computer-concept.jpg'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.navbar{
+    padding: 1rem;   
+}
+
+
+.navbar .list{
+    float: right;
+}
+
+.navbar .item{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar a{
+    color: white;
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.navbar .container h1{
+    float: left;
+    margin:0.5em;
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+.navbar .container li:hover{
+    border-bottom: 0.1em solid whitesmoke;
+}
+
+
+
+
+
+
+/* ########### Header Content Styling ########## */
+
+.header-content{
+    font-weight: 35em;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.header-content a{
+    color: red;
+    font-weight: 700;
+}
+
+
+
+/* ####################section################ */
+
+.boxes{
+    padding-top: 50px;
+    background-color: rgb(207, 205, 205);
+}
+
+.row{
+    margin-bottom: 50px;
+    height: 350px;
+    background-color: aliceblue;
+}
+
+
+
+
+.image-box{
+    height: 100%;
+}
+
+.text-box{
+    height: 100%;
+    padding: 15px;
+}
+
+.row1 .image-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.row2 .image-box, .row1 .text-box{
+    float: Right;
+    width: 50%;
+}
+
+
+.image-box img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    object-position: center;
+}
+
+.text-box a{
+    color: red;
+}
+
+.boxes::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ################### link hover################ */
+
+.row .text-box a:hover{
+    background-color: black;
+    border: 2px solid gray;
+    color: whitesmoke;
+}
+
+.header-content a:hover{
+    background-color: black;
+    border: 2px solid gray;
+    color: whitesmoke;
+}
+
+
+/* ######################## Box-Shadow ###################### */
+
+.row {
+    box-shadow: 0px 0px 6px 4px rgb(49, 49, 49);
+}
+
+
+/* ################ features ################# */
+
+.features{
+padding-top: 1rem;
+padding-bottom: 4rem;
+background-color: rgb(207, 205, 205);
+/* margin-bottom: 4rem; */
+/* border: 2px solid green; */
+
+}
+
+.box{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding-top: 1rem;
+}
+.mainbox{
+    box-shadow: 0px 0px 6px 4px rgb(116, 113, 113);
+}
+
+.mainbox::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* #################### box-shadow################### */
+
+.box-01, .box-03{
+    background-image: linear-gradient( 110.3deg,  rgb(127, 146, 167) 8.8%, rgba(127,146,166,1) 95.1% );
+    color: aliceblue;
+}

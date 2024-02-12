@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/* ############ HTML Element Styling ######## */
+
+html{
+    font-size: 62.5%
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1, h2, h2{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500rem;
+    font-size: 2.5rem;
+    font-family: 'Vesper Libre', serif;
+}
+
+
+/* ############# utility Clases ########### */
+
+
+.container{
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    /* border: 3px solid red; */
+   
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.normal-haeding{
+    font-size: 1.6rem;
+}
+
+
+.text-red{
+    color: rgb(172, 80, 80);
+}
+
+
+.text-white{
+    color:rgb(233, 220, 220);
+}
+
+
+.text-black{
+    color: rgba(20, 20, 20, 0.815);
+}
+
+
+.text-gray{
+    color: grey;
+}
+
+
+
+.btn{
+    display: inline-block;
+    padding:  0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0em;
+}
+
+.btn-primary{
+    background-color: white;
+    border-radius: 10em;
+}
+
+.btn-sec{
+    border: 2px solid red;
+    border-radius: 10em;
+}
+
+.bg-dark{
+    background-color: rgba(14, 13, 13, 0.959);
+}
+
+
+/* ######################Header-Styling###############*/
+
+
+.navbar{
+    padding: 1rem;   
+}
+
+
+.navbar .list{
+    float: right;
+}
+
+.navbar .item{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar a{
+    color: white;
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.navbar .container h1{
+    float: left;
+    margin:0.5em;
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+.navbar .container li:hover{
+    border-bottom: 0.1em solid whitesmoke;
+}
+    /* ######################### contact styling ############## */
+
+
+.contact{
+    float: left;
+    width: 45%;
+    /* border: 2px solid red; */
+    margin-top: 3em;
+    box-shadow: 0px 0px 6px 4px rgb(49, 49, 49);
+    border: 2px solid black;
+    background-image: linear-gradient( 110.3deg,  rgba(72,85,99,1) 8.8%, rgba(127,146,166,1) 95.1% );
+}
+
+
+
+.b-img img{
+    width: 100%;
+    
+    object-fit: cover;
+}
+
+h3{
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.contact i{
+    color: whitesmoke;
+    padding: 0 0.4em;
+    margin-top: 1em;
+}
+.co-box::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.co-box{
+    /* border: 2px solid red; */
+    width:100%;
+
+}
+
+
+
+label::after{
+    content: '*';
+}
+
+.form{
+    margin-top: 3em;
+    width: 45%;
+    float: right;
+    border: 2px solid black;
+    box-shadow: 0px 0px 6px 4px rgb(49, 49, 49);
+    
+    background-image: linear-gradient( 110.3deg,  rgba(72,85,99,1) 8.8%, rgba(127,146,166,1) 95.1% );
+}
+
+.s-btn input:hover{
+    
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.s-btn input{
+font-weight: 700;
+font-size: 1.5rem;
+background-color: whitesmoke;
+text-decoration: none;
+border: none;
+margin: 0 4em;
+margin-bottom: 0.5em;
+padding: 0.5em;
+border-radius: 1.5em;
+}
+label{
+    font-size: 1.5rem;
+    font-weight: 550;
+    border: none;
+}
+
+/* ##############media-query################# */
+
+@media (max-width:500px){
+    html{
+        font-size: 50%;
+    }
+
+    .navbar .container h1{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar .list{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .form{
+        margin-top: 3em;
+        width: 100%;
+        float: none;
+        height: auto;
+        margin-bottom: 3em;
+    }
+
+    .contact{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* ############# 501~ 768########### */
+
+@media (min-width:501px) and (max-width:768px){
+    html{
+        font-size: 58%;
+    }
+
+    .navbar .container h1{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar .list{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .form{
+        margin-top: 3em;
+        width: 100%;
+        float: none;
+        height: auto;
+        margin-bottom: 3em;
+    }
+
+    .contact{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* ############# 769~1200 ############ */
+
+/* @media (min-width:769px) and (max-width:1200px){
+    html{
+        font-size: 62.5%;
+    }
+
+    .navbar .container h1{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar .list{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .form{
+        margin-top: 3em;
+        width: 100%;
+        float: none;
+        height: auto;
+        margin-bottom: 3em;
+    }
+
+    .contact{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+} */
+
